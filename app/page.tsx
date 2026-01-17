@@ -24,16 +24,6 @@ export default function Home() {
       <section className="section fade-in" id="hero" style={{position: 'relative', zIndex: 1}}>
         <div className="card" style={{paddingTop: '3rem', paddingBottom: '3rem', position: 'relative', zIndex: 2}}>
           <div style={{display: 'flex', alignItems: 'flex-start', gap: '2.5rem', flexWrap: 'wrap'}}>
-            {/* Profile Picture on Top Left */}
-            <div style={{flex: '0 0 auto', marginRight: '1.5rem'}}>
-              <div style={{width: 110, height: 110, borderRadius: '50%', overflow: 'hidden', border: '4px solid var(--accent)', boxShadow: '0 2px 16px 0 rgba(0,0,0,0.10)'}}>
-                <img
-                  src="/profile.png"
-                  alt="Alex Gitari profile"
-                  style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}}
-                />
-              </div>
-            </div>
             {/* Main Hero Content Centered */}
             <div style={{flex: 1, minWidth: 240, textAlign: 'center'}}>
               {/* Hero Main Visual: heropic.png (Large Landing Visual) */}
