@@ -286,7 +286,7 @@ export default function Home() {
           {/* Contact Methods with Flip Hover */}
           <div style={{marginTop: '2.2rem', display: 'flex', justifyContent: 'center', gap: '1.2rem', flexWrap: 'wrap'}}>
             {/* Email */}
-            <a href="mailto:alex.gitari@email.com" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="Email">
+            <a href="mailto:agitari65@gmail.com" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="Email">
               <span style={{display: 'block', width: '100%', height: '100%', borderRadius: '50%', background: 'var(--card-bg)', boxShadow: '0 2px 8px 0 rgba(29,233,182,0.10)', position: 'relative', transition: 'transform 0.5s', transformStyle: 'preserve-3d'}} className="contact-flip-inner">
                 <span style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, color: '#ff7e29', backfaceVisibility: 'hidden'}}>
                   <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 2.41l-7.29 7.3a1 1 0 0 1-1.42 0L4 6.41V20h16V6.41z"/></svg>
@@ -297,7 +297,7 @@ export default function Home() {
               </span>
             </a>
             {/* Phone */}
-            <a href="tel:+254700000000" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="Phone">
+            <a href="tel:+254748344757" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="Phone">
               <span style={{display: 'block', width: '100%', height: '100%', borderRadius: '50%', background: 'var(--card-bg)', boxShadow: '0 2px 8px 0 rgba(255,126,41,0.10)', position: 'relative', transition: 'transform 0.5s', transformStyle: 'preserve-3d'}} className="contact-flip-inner">
                 <span style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, color: '#1de9b6', backfaceVisibility: 'hidden'}}>
                   <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
@@ -308,7 +308,7 @@ export default function Home() {
               </span>
             </a>
             {/* LinkedIn */}
-            <a href="https://linkedin.com/in/alexgitari" target="_blank" rel="noopener" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/alex-gitari-766053228/" target="_blank" rel="noopener" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="LinkedIn">
               <span style={{display: 'block', width: '100%', height: '100%', borderRadius: '50%', background: 'var(--card-bg)', boxShadow: '0 2px 8px 0 rgba(29,233,182,0.10)', position: 'relative', transition: 'transform 0.5s', transformStyle: 'preserve-3d'}} className="contact-flip-inner">
                 <span style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, color: '#0077b5', backfaceVisibility: 'hidden'}}>
                   <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/></svg>
@@ -319,7 +319,7 @@ export default function Home() {
               </span>
             </a>
             {/* GitHub */}
-            <a href="https://github.com/alexgitari" target="_blank" rel="noopener" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="GitHub">
+            <a href="https://github.com/Gitari65" target="_blank" rel="noopener" className="contact-flip" style={{display: 'inline-block', width: 56, height: 56, perspective: 600}} aria-label="GitHub">
               <span style={{display: 'block', width: '100%', height: '100%', borderRadius: '50%', background: 'var(--card-bg)', boxShadow: '0 2px 8px 0 rgba(255,126,41,0.10)', position: 'relative', transition: 'transform 0.5s', transformStyle: 'preserve-3d'}} className="contact-flip-inner">
                 <span style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, color: '#fff', backfaceVisibility: 'hidden'}}>
                   <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.589 8.199-6.085 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
