@@ -1,20 +1,41 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < 10) {
+        setShowNavbar(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        // Scrolling down
+        setShowNavbar(false);
+      } else {
+        // Scrolling up
+        setShowNavbar(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar${showNavbar ? " navbar-visible" : " navbar-hidden"}`}>
       <div className="navbar-container">
-        <div style={{display: 'flex', alignItems: 'center', gap: '0.7rem'}}>
-          <a href="#hero" style={{display: 'flex', alignItems: 'center'}}>
+        <div className="navbar-profile-wrap">
+          <a href="#hero" className="navbar-profile-img-link">
             <img
               src="/profile.png"
               alt="Alex Gitari profile"
-              style={{width: '5rem', height: '5rem', borderRadius: '50%', border: '2px solid var(--accent)', objectFit: 'cover', boxShadow: '0 1px 6px 0 rgba(0,0,0,0.10)', marginRight: 8}}
+              className="navbar-profile-img"
             />
           </a>
-          <a href="#hero" className="navbar-logo">Alex<span className="accent">Gitari</span></a>
+          <a href="#hero" className="navbar-logo navbar-name">Alex<span className="accent">Gitari</span></a>
         </div>
         <button
           className="navbar-burger"
@@ -36,3 +57,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+

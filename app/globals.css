@@ -1,3 +1,61 @@
+/* Navbar show/hide on scroll */
+.navbar-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* Navbar profile image and name responsive styles */
+.navbar-profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.navbar-profile-img-link {
+  display: flex;
+  align-items: center;
+}
+.navbar-profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  object-fit: cover;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.10);
+  margin-right: 8px;
+  transition: width 0.2s, height 0.2s;
+}
+.navbar-name {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+@media (max-width: 850px) {
+  .navbar-name {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0;
+  }
+  .navbar {
+    min-height: 1.8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-container {
+    padding: 0.15rem 0.5rem;
+    min-height: 2.2rem;
+  }
+}
 /* Stylish Sticky Responsive Navbar */
 .navbar {
   position: sticky;
@@ -86,14 +144,15 @@
     gap: 0;
     padding: 0.7rem 1.5rem 1.2rem 1.5rem;
     box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
-    max-height: 0;
-    overflow: hidden;
+    max-height: 0 !important;
+    overflow: hidden !important;
     transition: max-height 0.3s;
     z-index: 101;
   }
   .navbar-links.open {
-    max-height: 400px;
+    max-height: 400px !important;
     transition: max-height 0.4s;
+    overflow: visible !important;
   }
 }
 .hero-img {
